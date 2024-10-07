@@ -2,6 +2,7 @@
 // Steps of doing Javascripts
 //......#1....Save the data i.e. product information in our case.
 import {cart} from '../data/cart.js';//importing module at the top
+import { products } from '../data/products.js';//avoids naming conflicts.
 
 let productsHTML = '';
 

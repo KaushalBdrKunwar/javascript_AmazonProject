@@ -3,7 +3,7 @@
 //......#1....Save the data i.e. product information in our case.
 import {cart, addToCart} from '../data/cart.js';//importing module at the top
 import { products } from '../data/products.js';//avoids naming conflicts.
-
+import { formatCurrency } from './utils/money.js';
 let productsHTML = '';
 
 products.forEach((product) => {
@@ -27,7 +27,7 @@ products.forEach((product) => {
                     </div>
 
                     <div class="product-price">
-                        $${(product.priceCents / 100).toFixed(2)}
+                        $${formatCurrency(product.priceCents)}
                     </div>
 
                     <div class="product-quantity-container">

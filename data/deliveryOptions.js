@@ -12,11 +12,11 @@
     priceCents: 999
 }];
 
-export function getDeliveryOption(deliveryOptionId) {
+export function getDeliveryOption(deliveryOptionsId) {
     let deliveryOption;
 
     deliveryOptions.forEach((option) => {
-        if(option.id === deliveryOptionId){
+        if(option.id === deliveryOptionsId){
             deliveryOption = option;
         }
     });
